@@ -1,0 +1,145 @@
+<?php
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>RideDekho</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io\favicon-16x16.png">
+    <link rel="manifest" href="favicon_io\site.webmanifest">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--Css Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Font awesome -->
+    <!-- <script src="https://kit.fontawesome.com/9f1e537989.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/9f1e537989.js" crossorigin="anonymous"></script>
+    
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">RideDekho <i class="fa-solid fa-user"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+              </span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../rent_vehicle/rent_vehicle.php">Rent Vehicle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link">Welcome: <?php echo $_SESSION['name']; ?></a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="logout.php">Logout </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </nav>
+
+            <!-- Title -->
+
+            <div class="row">
+                <div class="">
+                    <h1>Exclusive rental services on different vehicles.</h1>
+                </div>    
+                
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+
+    <section id="features">
+        <div class="row">
+
+            <div class="feature-box col-lg-3">
+                <i class="icon fa-solid fa-circle-check fa-4x"></i>
+                <h3>Easy to use.</h3>
+                <p>It aims at providing convenience of zero insurance cost, zero service and maintenance and 24x7 roadside assistance.</p>
+            </div>
+
+            <div class="feature-box col-lg-3">
+                <i class="icon fa-solid fa-clock fa-4x"></i>
+                <h3>Elite Clientele</h3>
+                <p>We have a set of happy and satisfied customers who love our service.</p>
+            </div>
+
+            <div class="feature-box col-lg-3">
+                <i class="icon fa-solid fa-thumbs-up fa-4x"></i>
+                <h3>Guaranteed to work.</h3>
+                <p>Rather than going door-to-door we make it easy for the user, as they can book the vehicle online and can have a hassle free experience.</p>
+            </div>
+
+            <div class="feature-box col-lg-3">
+                <i class="icon fa-solid fa-hand-holding-dollar fa-4x"></i>
+                <h3>Save money.</h3>
+                <p>People who don't use their vehicles more often can list it on the website and get financial benefits from it.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+    <!-- Call to Action -->
+
+    <section id="cta">
+
+        <h2 class="cta_heading">About Us.</h2>
+        <p>
+            <button class="btn btn-block btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa-solid fa-question"></i>
+            </button>
+        </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body about">
+                Nicknamed, 'The Temple City' Bhubaneswar is one of those cities that offer a peaceful life for its residents. The capital city of Odisha holds a prominent place in the country's economics thanks to the thriving job market. With the growing demands, the city has expanded and lead to the urbanization of the surrounding areas. Being a prominent hub for education and employment, the traffic in this city is constantly increasing. The daily commute in the city becomes so much simpler if one opts for a self drive vehicle rental in Bhubaneswar.
+            </div>
+          </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <i class="footer-class fa-brands fa-facebook-f"></i>
+        <i class="footer-class fa-brands fa-twitter"></i>
+        <i class="footer-class fa-brands fa-instagram"></i>
+        <i class="footer-class fa-brands fa-whatsapp"></i>
+        <p>© Copyright RideDekho</p>
+
+    </footer>
+
+
+</body>
+
+</html>
